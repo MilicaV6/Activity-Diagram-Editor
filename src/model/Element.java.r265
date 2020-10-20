@@ -1,0 +1,22 @@
+/***********************************************************************
+ * Module:  Element.java
+ * Author:  Admir Orman
+ * Purpose: Defines the Class Element
+ ***********************************************************************/
+
+package model;
+
+public class Element implements command.Command {
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void unexecute() {
+		// TODO Auto-generated method stub
+		
+	}
+}

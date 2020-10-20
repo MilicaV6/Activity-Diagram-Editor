@@ -1,0 +1,62 @@
+/***********************************************************************
+ * Module:  Dokument.java
+ * Author:  Admir Orman
+ * Purpose: Defines the Class Dokument
+ ***********************************************************************/
+
+package model;
+
+public class Dokument {
+   public java.util.Collection<Element> element;
+   
+   
+   /** @pdGenerated default getter */
+   public java.util.Collection<Element> getElement() {
+      if (element == null)
+         element = new java.util.HashSet<Element>();
+      return element;
+   }
+   
+   /** @pdGenerated default iterator getter */
+   public java.util.Iterator getIteratorElement() {
+      if (element == null)
+         element = new java.util.HashSet<Element>();
+      return element.iterator();
+   }
+   
+   /** @pdGenerated default setter
+     * @param newElement */
+   public void setElement(java.util.Collection<Element> newElement) {
+      removeAllElement();
+      for (java.util.Iterator iter = newElement.iterator(); iter.hasNext();)
+         addElement((Element)iter.next());
+   }
+   
+   /** @pdGenerated default add
+     * @param newElement */
+   public void addElement(Element newElement) {
+      if (newElement == null)
+         return;
+      if (this.element == null)
+         this.element = new java.util.HashSet<Element>();
+      if (!this.element.contains(newElement))
+         this.element.add(newElement);
+   }
+   
+   /** @pdGenerated default remove
+     * @param oldElement */
+   public void removeElement(Element oldElement) {
+      if (oldElement == null)
+         return;
+      if (this.element != null)
+         if (this.element.contains(oldElement))
+            this.element.remove(oldElement);
+   }
+   
+   /** @pdGenerated default removeAll */
+   public void removeAllElement() {
+      if (element != null)
+         element.clear();
+   }
+
+}
